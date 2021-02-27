@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 public enum EventType {
     UPLOAD("U"), DOWNLOAD("D");
 
-    private String code;
+    private final String code;
 
     EventType(String code) {
         this.code = code;
