@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PersonController {
 
-  @GetMapping("/persons/{id}")
-  public PersonVo getPerson(@PathVariable("id") String id) {
-    return new PersonVo(id, null, "张三", null);
-  }
+    @GetMapping("/persons/{id}")
+    public PersonVo getPerson(@PathVariable("id") String id) {
+        return new PersonVo(id, null, "张三", null);
+    }
 }
